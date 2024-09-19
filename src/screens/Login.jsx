@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { TextInput } from 'react-native-paper';
 import { BlurView } from 'expo-blur';
 
-const Login = () => {
+const Login = ({ navigation }) => {
 
 	const [text, setText] = React.useState("");
 
@@ -74,7 +74,7 @@ const Login = () => {
 					</View>
 					<View className="flex mt-1 min-w-full ml-24 items-start flex-row space-x-1">
 						<Text>Esqueceu sua</Text>
-						<Text className="text-[#36B0FD]">senha?</Text>
+						<Text onPress={() => navigation.navigate('EsqueciSenha')} className="text-[#36B0FD]">senha?</Text>
 					</View>
 
 					<TouchableOpacity className="bg-[#36B0FD] w-[162px] h-[39px] rounded-xl shadow-lg flex items-center justify-center mt-9">
