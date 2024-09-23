@@ -97,8 +97,8 @@ const Registro = ({ navigation }) => {
                             </View>
                         </View>
 
-                        <TouchableOpacity className="bg-[#36B0FD] w-[162px] h-[39px] rounded-xl shadow-lg flex items-center justify-center mt-9">
-                            <Text onPress={() => navigation.navigate('Sucesso')} className="text-white font-semibold text-lg">Cadastrar</Text>
+                        <TouchableOpacity onPress={() => navigation.navigate('Sucesso')} className="bg-[#36B0FD] w-[162px] h-[39px] rounded-xl shadow-lg flex items-center justify-center mt-9">
+                            <Text className="text-white font-semibold text-lg">Cadastrar</Text>
                         </TouchableOpacity>
                         <Text className="mt-1 text-neutral-700">Já possui uma conta? <Text onPress={() => navigation.navigate('Login')} className="text-[#36B0FD] font-semibold">Fazer login</Text></Text>
                     </View>
