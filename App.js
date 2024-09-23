@@ -1,6 +1,6 @@
 import Login from './src/screens/Login'
 import EsqueciSenha from './src/screens/EsqueciSenha'
-import Sucesso from './src/screens/SucessoSenha'
+import Sucesso from './src/screens/Sucesso'
 import Registro from './src/screens/Registro'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';

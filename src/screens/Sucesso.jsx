@@ -41,7 +41,7 @@ const Sucesso = ({ navigation }) => {
 					<View className="flex justify-center items-center p-5 space-y-5">
 						<Image className="h-[140px] w-[140px]" source={require('../assets/sucesso.png')}></Image>
 						<Text className="text-5xl text-green-500 font-extrabold">Sucesso!</Text>
-						<Text className="text-base text-center">Um email de confirmação foi enviado a <Text className="text-[#36b0fd]">*****@gmail.com</Text>, após confirmar, faça o processo de login novamente! aproveite nosso aplicativo!</Text>
+						<Text className="text-base text-center text-neutral-700">Um email de confirmação foi enviado a <Text className="text-[#36b0fd] font-semibold">*****@gmail.com</Text>, após confirmar, faça o processo de login novamente! aproveite nosso aplicativo!</Text>
 						<TouchableOpacity className="bg-[#36B0FD] w-[162px] h-[39px] rounded-xl shadow-lg flex items-center justify-center mt-9">
 							<Text onPress={() => navigation.navigate('Login')} className="text-white font-semibold text-lg">Voltar ao Login</Text>
 						</TouchableOpacity>

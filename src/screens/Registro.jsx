@@ -49,7 +49,7 @@ const Registro = ({ navigation }) => {
                         }}
                     />
                     <View className="flex justify-center items-center p-10">
-                        <Text className="text-3xl font-bold mb-2">Registrar</Text>
+                        <Text className="text-3xl font-bold mb-2 text-neutral-700">Registrar</Text>
                         <View className="flex justify-center items-center space-y-3">
                             <TextInput
                                 mode="outlined"
@@ -93,14 +93,14 @@ const Registro = ({ navigation }) => {
                                         setChecked(!checked);
                                     }}
                                 />
-                                <Text>Ao me cadastrar, eu concordo com os termos.</Text>
+                                <Text className="text-neutral-700">Ao me cadastrar, eu concordo com os termos.</Text>
                             </View>
                         </View>
 
                         <TouchableOpacity className="bg-[#36B0FD] w-[162px] h-[39px] rounded-xl shadow-lg flex items-center justify-center mt-9">
                             <Text onPress={() => navigation.navigate('Sucesso')} className="text-white font-semibold text-lg">Cadastrar</Text>
                         </TouchableOpacity>
-                        <Text className="mt-1">Já possui uma conta? <Text onPress={() => navigation.navigate('Login')} className="text-[#36B0FD]">Fazer login</Text></Text>
+                        <Text className="mt-1 text-neutral-700">Já possui uma conta? <Text onPress={() => navigation.navigate('Login')} className="text-[#36B0FD] font-semibold">Fazer login</Text></Text>
                     </View>
                 </ImageBackground>
             </LinearGradient>

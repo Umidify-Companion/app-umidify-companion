@@ -52,7 +52,7 @@ const EsqueciSenha = ({ navigation }) => {
 					</View>
 					<View className="space-y-4 p-5">
 						<Text className="text-2xl font-bold text-neutral-700">Esqueceu sua senha?</Text>
-						<Text className="text-lg">Insira seu endereço de e-mail abaixo. Nós enviaremos um link para definir uma <Text className="text-[#36B0FD]">nova senha.</Text></Text>
+						<Text className="text-lg text-neutral-700">Insira seu endereço de e-mail abaixo. Nós enviaremos um link para definir uma <Text className="text-[#36B0FD] font-semibold">nova senha.</Text></Text>
 						<TextInput
 							mode="outlined"
 							label="Email"
