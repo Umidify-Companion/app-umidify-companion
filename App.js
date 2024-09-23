@@ -1,6 +1,7 @@
 import Login from './src/screens/Login'
 import EsqueciSenha from './src/screens/EsqueciSenha'
 import Sucesso from './src/screens/SucessoSenha'
+import Registro from './src/screens/Registro'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -13,6 +14,7 @@ export default function App() {
         <Stack.Screen options={{ headerShown: false }} name="Login" component={Login} />
         <Stack.Screen options={{ headerShown: false }} name="EsqueciSenha" component={EsqueciSenha} />
         <Stack.Screen options={{ headerShown: false }} name="Sucesso" component={Sucesso} />
+        <Stack.Screen options={{ headerShown: false }} name="Registro" component={Registro} />
       </Stack.Navigator>
     </NavigationContainer>
   );

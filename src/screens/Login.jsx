@@ -82,7 +82,7 @@ const Login = ({ navigation }) => {
 					</TouchableOpacity>
 					<View className="flex mt-1 items-start flex-row space-x-1">
 						<Text>Não possui uma</Text>
-						<Text className="text-[#36B0FD]">conta?</Text>
+						<Text onPress={() => navigation.navigate('Registro')} className="text-[#36B0FD]">conta?</Text>
 					</View>
 				</ImageBackground>
 			</LinearGradient>
