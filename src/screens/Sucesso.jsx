@@ -24,7 +24,7 @@ const Sucesso = ({ navigation }) => {
 				<ImageBackground
 					source={require('../assets/noise.png')}
 					resizeMode="cover"
-					style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
+					style={{ flex: 1, justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}
 					imageStyle={{ borderRadius: 15, opacity: 0.5 }} // Para garantir que a imagem siga o borderRadius do card
 				>
 					<BlurView
