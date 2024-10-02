@@ -18,15 +18,15 @@ const Principal = ({ navigation }) => {
 
 		switch (true) {
 			case numericUmidity >= 10 && numericUmidity <= 40:
-				return require("../assets/umidity20.json");
+				return require("../assets/principalAssets/umidity20.json");
 			case numericUmidity >= 40 && numericUmidity <= 60:
-				return require("../assets/umidity40.json");
+				return require("../assets/principalAssets/umidity40.json");
 			case numericUmidity >= 60 && numericUmidity <= 80:
-				return require("../assets/umidity60.json");
+				return require("../assets/principalAssets/umidity60.json");
 			case numericUmidity >= 80 && numericUmidity <= 100:
-				return require("../assets/umidity80.json");
+				return require("../assets/principalAssets/umidity80.json");
 			default:
-				return require("../assets/umidityDefault.json");
+				return require("../assets/principalAssets/umidityDefault.json");
 		}
 	};
 
@@ -35,15 +35,15 @@ const Principal = ({ navigation }) => {
 
 		switch (true) {
 			case numericUmidity >= 10 && numericUmidity <= 40:
-				return require("../assets/desert.json");
+				return require("../assets/principalAssets/desert.json");
 			case numericUmidity >= 40 && numericUmidity <= 60:
-				return require("../assets/umidity40logo.json");
+				return require("../assets/principalAssets/umidity40logo.json");
 			case numericUmidity >= 60 && numericUmidity <= 80:
-				return require("../assets/umidity60logo.json");
+				return require("../assets/principalAssets/umidity60logo.json");
 			case numericUmidity >= 80 && numericUmidity <= 100:
-				return require("../assets/umidity80logo.json");
+				return require("../assets/principalAssets/umidity80logo.json");
 			default:
-				return require("../assets/umidityLoading.json");
+				return require("../assets/principalAssets/umidityLoading.json");
 		}
 	}
 
@@ -116,7 +116,7 @@ const Principal = ({ navigation }) => {
 			/>
 			<View className="absolute min-h-full top-14 left-3">
 				<View className="flex flex-row items-center space-x-2">
-					<Avatar.Image size={30} source={require('../assets/fototeste.jpg')} />
+					<Avatar.Image size={30} source={require('../assets/principalAssets/fototeste.jpg')} />
 					<Text className="text-base text-white">Bem vindo, *nome*</Text>
 				</View>
 			</View>
