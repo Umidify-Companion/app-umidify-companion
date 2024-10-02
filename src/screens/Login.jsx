@@ -77,7 +77,7 @@ const Login = ({ navigation }) => {
 						<Text onPress={() => navigation.navigate('EsqueciSenha')} className="text-[#36B0FD] font-semibold">senha?</Text>
 					</View>
 
-					<TouchableOpacity onPress={() => navigation.navigate('Principal')} className="bg-[#36B0FD] w-[162px] h-[39px] rounded-xl shadow-lg flex items-center justify-center mt-9">
+					<TouchableOpacity onPress={() => navigation.navigate('PrincipalTabs', { screen: 'Principal' })} className="bg-[#36B0FD] w-[162px] h-[39px] rounded-xl shadow-lg flex items-center justify-center mt-9">
 						<Text className="text-white font-semibold text-lg">Entrar</Text>
 					</TouchableOpacity>
 					<View className="flex mt-1 items-start flex-row space-x-1">
