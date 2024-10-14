@@ -51,7 +51,7 @@ const PrincipalWeather = ({ navigation }) => {
 
 			{/* Espectativas para o clima */}
 			<View className="mt-6">
-				<View className="flex flex-row space-x-2 items-center ml-2 mb-3">
+				<View className="flex flex-row space-x-2 items-center ml-3 mb-3">
 					<Feather name="clock" size={20} color="white" />
 					<Text className="text-white text-lg">Previsão para o dia</Text>
 				</View>
