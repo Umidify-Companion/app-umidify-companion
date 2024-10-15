@@ -5,6 +5,7 @@ import { IconButton, MD3Colors } from 'react-native-paper';
 import EvilIcons from '@expo/vector-icons/EvilIcons';
 import Feather from '@expo/vector-icons/Feather';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import PrincipalMenu from '../components/PrincipalMenu';
 
 
 const PrincipalWeather = ({ navigation }) => {
@@ -12,7 +13,7 @@ const PrincipalWeather = ({ navigation }) => {
 
 	return (
 		<View className="flex-1 justify-center items-center bg-[#202020]">
-			<Text className="text-white font-light absolute top-14">Temperatura geral</Text>
+			<Text className="text-white absolute top-14">Temperatura geral</Text>
 			<LottieView
 				source={require("../assets/principalWeatherAssets/background.json")}
 				style={{ width: "100%", height: "30%" }}
@@ -86,13 +87,7 @@ const PrincipalWeather = ({ navigation }) => {
 			</View>
 
 			{/* //Menu */}
-			<View className="w-72 h-16 absolute bottom-4 rounded-3xl flex justify-center items-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-				<View className="flex flex-row space-x-6">
-					<IconButton icon="home" iconColor={MD3Colors.primary100} onPress={() => navigation.navigate('PrincipalTabs', { screen: 'Principal' })} />
-					<IconButton icon="cloud" iconColor={MD3Colors.primary100} onPress={() => navigation.navigate('PrincipalTabs', { screen: 'PrincipalWeather' })} />
-					<IconButton icon="cog-outline" iconColor={MD3Colors.primary100} />
-				</View>
-			</View>
+			<PrincipalMenu navigation={navigation} />
 		</View>
 	);
 };
