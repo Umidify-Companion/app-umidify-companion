@@ -4,6 +4,7 @@ import Sucesso from './src/screens/Sucesso'
 import Registro from './src/screens/Registro'
 import Principal from './src/screens/Principal'
 import PrincipalWeather from './src/screens/PrincipalWeather'
+import PrincipalConfigurations from './src/screens/PrincipalConfigurations'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -16,6 +17,7 @@ function PrincipalTabs() {
     <HomeStack.Navigator>
       <HomeStack.Screen options={{ headerShown: false }} name="Principal" component={Principal} />
       <HomeStack.Screen options={{ headerShown: false }} name="PrincipalWeather" component={PrincipalWeather} />
+      <HomeStack.Screen options={{ headerShown: false }} name="PrincipalConfigurations" component={PrincipalConfigurations} />
     </HomeStack.Navigator>
   );
 }
